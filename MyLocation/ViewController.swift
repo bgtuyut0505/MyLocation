@@ -7,14 +7,41 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    let locationManager = CLLocationManager()
+    
+    @IBOutlet var latLabel: UILabel!
+    @IBOutlet var longLabel: UILabel!
+    @IBAction func getLocation(){
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManager.requestLocation() //request once
+        //locationManager.startUpdatingLocation() //countinous
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let authStatus = CLLocationManager.authorizationStatus()
+        if authStatus == .notDetermined{
+            locationManager.requestWhenInUseAuthorization()
+        }
+        locationManager.delegate = self
     }
 
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first{
+            latLabel.text = "\(location.coordinate.latitude)"
+            longLabel.text = "\(location.coordinate.longitude)"
+        }
+    }
 
 }
 

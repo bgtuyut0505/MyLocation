@@ -13,6 +13,7 @@
 		4EDE5C8B2581B345006A52EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDE5C892581B345006A52EA /* Main.storyboard */; };
 		4EDE5C8D2581B345006A52EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDE5C8C2581B345006A52EA /* Assets.xcassets */; };
 		4EDE5C902581B345006A52EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDE5C8E2581B345006A52EA /* LaunchScreen.storyboard */; };
+		4EDE5C982581B956006A52EA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDE5C972581B956006A52EA /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4EDE5C8C2581B345006A52EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EDE5C8F2581B345006A52EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EDE5C912581B345006A52EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EDE5C972581B956006A52EA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				4EDE5C832581B345006A52EA /* AppDelegate.swift */,
 				4EDE5C852581B345006A52EA /* SceneDelegate.swift */,
-				4EDE5C872581B345006A52EA /* ViewController.swift */,
 				4EDE5C892581B345006A52EA /* Main.storyboard */,
 				4EDE5C8C2581B345006A52EA /* Assets.xcassets */,
 				4EDE5C8E2581B345006A52EA /* LaunchScreen.storyboard */,
 				4EDE5C912581B345006A52EA /* Info.plist */,
+				4EDE5C872581B345006A52EA /* ViewController.swift */,
+				4EDE5C972581B956006A52EA /* MapViewController.swift */,
 			);
 			path = MyLocation;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				4EDE5C882581B345006A52EA /* ViewController.swift in Sources */,
 				4EDE5C842581B345006A52EA /* AppDelegate.swift in Sources */,
 				4EDE5C862581B345006A52EA /* SceneDelegate.swift in Sources */,
+				4EDE5C982581B956006A52EA /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
